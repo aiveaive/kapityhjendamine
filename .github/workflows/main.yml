@@ -4,24 +4,24 @@ on: [push]
 jobs:
   build:
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - uses: actions/checkout@v1
-  - name: FTP Deploy
-  uses: SamKirkland/FTP-Deploy-Action@2.0.0
-  with:
-    # FTP server name (you may need to specify a port)
-    ftp_server: ta18pahn.itmajakas.ee
-    # FTP account username
-    ftp_username: aivepahn.ta18pahn.itmajakas.ee 
-    # FTP account password
-    ftp_password: ${{ secrets.FTP_PASSWORD }}
-    # Protocol used to deploy (ftp or sftp)
-    
-    port: 21 # optional, default is 21
-    # The local folder to copy, defaults to root project folder
-    
-    remote_dir: /kapityhjendamine # optional, default is 
-    # Passes through options into lftp
-    
+    steps:
+    - uses: actions/checkout@v1
+    - name: FTP Deploy
+    uses: SamKirkland/FTP-Deploy-Action@2.0.0
+    with:
+      # FTP server name (you may need to specify a port)
+      ftp_server: ta18pahn.itmajakas.ee
+      # FTP account username
+      ftp_username: aivepahn.ta18pahn.itmajakas.ee 
+      # FTP account password
+      ftp_password: ${{ secrets.FTP_PASSWORD }}
+      # Protocol used to deploy (ftp or sftp)
+      
+      port: 21 # optional, default is 21
+      # The local folder to copy, defaults to root project folder
+      
+      remote_dir: /kapityhjendamine # optional, default is 
+      # Passes through options into lftp
+      
