@@ -1,0 +1,22 @@
+#first paragraph {
+    font-size: 32px;
+}
+
+.alert {
+
+}
+iable span {
+    color: lime
+}
+table {
+    border-collapse:collapse;
+    margin: auto;
+}
+table th, table td {
+    border: 1px solid black;
+    padding: 4px 8px;
+    text-align: center;
+}
+table th {
+    text-align: left;
+}
