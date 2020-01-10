@@ -10,7 +10,7 @@ class PagesController
 
     public function about()
     {
-        $company = 'Kuressaare Ametikool';
+        $company = 'Kuresaare Ametikool';
         return view('about', ['company' => $company]);
         
     }  
